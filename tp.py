@@ -9,7 +9,7 @@ altitude_atual=0
 velo=float(input("Digite a velocidade em km/s: "))
 
 #em caso de windows, alterar na linha abaixo: 'clear' para 'cls'
-#os.system('cls')
+os.system('cls')
 
 passos_necessarios = int(ALTITUDE_MAXIMA / velo)
 passo_atual = 0
@@ -25,7 +25,7 @@ while altitude_atual <= ALTITUDE_MAXIMA:
 
     altitude_atual = altitude_atual + velo
 
-    #os.system('cls')
+    os.system('cls')
 
     print(f"\t__________ORBITA__________      (tempo: {passo_atual}s  altitude: {altitude_atual:.1f}km )")
 
